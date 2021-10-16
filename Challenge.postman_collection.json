@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "fba45cbc-f1be-4717-b582-7a50b6ffb5cf",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pass1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "user1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pass1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hello word",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Characters",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InVzZXIxIiwicGFzc3dvcmQiOiIkMmIkMTAkRzVSVkhiMTIyZ3N6T2dSUjBwUDcxdS5oaTJyRjFCR1huWVhYUHM3cUU3ak10Y1NHeERXYkciLCJjcmVhdGVkQXQiOiIyMDIxLTEwLTE2VDE1OjEyOjQ0LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTEwLTE2VDE1OjEyOjQ0LjAwMFoifSwiaWF0IjoxNjM0NDA5MTg3LCJleHAiOjE2MzQ0OTU1ODd9.uR1kqVinasesDmxRMKHq2Yl8vPWnUH4ffXYytJWw9mQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/characters/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"characters",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Character",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6InVzZXIxIiwicGFzc3dvcmQiOiIkMmIkMTAkRzVSVkhiMTIyZ3N6T2dSUjBwUDcxdS5oaTJyRjFCR1huWVhYUHM3cUU3ak10Y1NHeERXYkciLCJjcmVhdGVkQXQiOiIyMDIxLTEwLTE2VDE1OjEyOjQ0LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTEwLTE2VDE1OjEyOjQ0LjAwMFoifSwiaWF0IjoxNjM0NDA5MTg3LCJleHAiOjE2MzQ0OTU1ODd9.uR1kqVinasesDmxRMKHq2Yl8vPWnUH4ffXYytJWw9mQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/characters/elsa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"characters",
+						"elsa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
